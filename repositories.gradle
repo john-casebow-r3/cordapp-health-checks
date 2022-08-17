@@ -1,0 +1,16 @@
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+
+    // Gradle deps
+    maven { url 'https://jitpack.io' }
+    maven { url 'https://repo.gradle.org/gradle/libs-releases' }
+
+    // Dependency on Corda open source
+    maven { url "https://software.r3.com/artifactory/corda" }
+    maven { url 'https://software.r3.com/artifactory/corda-lib' }
+
+    // Corda dependencies for the patched Quasar version
+    maven { url "https://software.r3.com/artifactory/corda-dependencies" } // access to the patched Quasar version
+}
